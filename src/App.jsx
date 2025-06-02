@@ -3,6 +3,7 @@ import { LiFiWidget } from '@lifi/widget';
 
 const widgetConfig = {
   integrator: 'realtswap',
+  variant: 'wide',
   containerStyle: {
     border: '1px solid #eee',
     borderRadius: '16px',
@@ -15,6 +16,12 @@ const widgetConfig = {
     },
   },
   appearance: 'light',
+  walletConfig: {
+    onConnect: () => {
+      console.log('Wallet connected!');
+    },
+    usePartialWalletManagement: true,
+  },
   theme: {
     colorSchemes: {
       light: {
