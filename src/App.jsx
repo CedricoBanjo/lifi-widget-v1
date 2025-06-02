@@ -4,7 +4,7 @@ import { LiFiWidget } from '@lifi/widget';
 const widgetConfig = {
   fee: {
     recipient: '0xc64C27E0b7407b0ae6c87329aAf5bb0cAd76BF4f',
-    amount: '0.001', // correspond à 0.1%
+    amount: 0.001, // correspond à 0.1%
     feeType: 'percentage',
   },
   theme: {
