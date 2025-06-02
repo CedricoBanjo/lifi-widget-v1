@@ -80,7 +80,7 @@ const widgetConfig = {
 
 function App() {
   return (
-    <div style={{ width: '100%', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ width: '100%', height: '100vh', backgroundColor: '#ffffff', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div style={{ width: '500px', height: '600px' }}>
         <LiFiWidget config={widgetConfig} />
       </div>
