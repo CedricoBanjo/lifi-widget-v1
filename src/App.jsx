@@ -105,7 +105,7 @@ function App() {
         <img
           src="logo-mondialswap.png"
           alt="MondialSwap Logo"
-          style={{ height: '40px', cursor: 'pointer' }}
+          style={{ height: '60px', cursor: 'pointer' }}
         />
       </a>
 
