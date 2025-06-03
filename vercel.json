@@ -1,7 +1,7 @@
-{Add commentMore actions
+{
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "routes": [
     { "src": "/(.*)", "dest": "/$1" }
-  ]Add commentMore actions
+  ]
 }
