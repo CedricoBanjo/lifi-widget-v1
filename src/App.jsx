@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { LiFiWidget } from '@lifi/widget';
 
 const widgetConfig = {
@@ -79,12 +79,6 @@ const widgetConfig = {
 };
 
 function App() {
-  const widgetRef = useRef(null);
-
-  const handleConnectWallet = () => {
-    widgetRef.current?.connectWallet?.();
-  };
-
   return (
     <div
       style={{
@@ -93,7 +87,7 @@ function App() {
         height: '100vh',
         position: 'relative',
         display: 'flex',
-        flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
         overflow: 'hidden',
       }}
@@ -117,25 +111,8 @@ function App() {
 
       {/* Widget */}
       <div style={{ width: '100%', maxWidth: '500px', height: '600px' }}>
-        <LiFiWidget config={widgetConfig} ref={widgetRef} />
+        <LiFiWidget config={widgetConfig} />
       </div>
-
-      {/* Bouton de connexion personnalisé en bas */}
-      <button
-        onClick={handleConnectWallet}
-        style={{
-          marginTop: '20px',
-          padding: '12px 24px',
-          fontSize: '16px',
-          backgroundColor: '#006Eff',
-          color: '#fff',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-        }}
-      >
-        Connect Wallet
-      </button>
     </div>
   );
 }
