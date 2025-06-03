@@ -16,12 +16,6 @@ const widgetConfig = {
     },
   },
   appearance: 'light',
-  walletConfig: {
-    onConnect: () => {
-      console.log('Wallet connected!');
-    },
-    usePartialWalletManagement: true,
-  },
   theme: {
     colorSchemes: {
       light: {
