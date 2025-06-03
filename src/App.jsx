@@ -20,7 +20,7 @@ const widgetConfig = {
     onConnect: () => {
       console.log('Wallet connected!');
     },
-    // 🔴 Supprimé: usePartialWalletManagement
+    usePartialWalletManagement: true,
   },
   theme: {
     colorSchemes: {
