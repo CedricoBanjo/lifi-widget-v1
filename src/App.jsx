@@ -1,7 +1,7 @@
 import React from 'react';
-import { LiFiWidget } from '@lifi/widget';
+import { LiFiWidget, WidgetConfig } } from '@lifi/widget';
 
-const widgetConfig = {
+const widgetConfig: WidgetConfig = {
   variant: 'wide',
   containerStyle: {
     border: '1px solid #eee',
