@@ -7,9 +7,6 @@ const widgetConfig = {
     border: '1px solid #eee',
     borderRadius: '16px',
   },
-  //Environnement de test
-  environment: 'test',
-  //
   options: {
     fee: {
       recipient: '0xc64C27E0b7407b0ae6c87329aAf5bb0cAd76BF4f',
