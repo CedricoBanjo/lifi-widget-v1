@@ -11,7 +11,7 @@ const widgetConfig = {
     fee: {
       recipient: '0xc64C27E0b7407b0ae6c87329aAf5bb0cAd76BF4f',
       amount: '0.05', // 5%
-      feeType: 'percentage',
+      // feeType: 'percentage',
     },
   },
   appearance: 'light',
