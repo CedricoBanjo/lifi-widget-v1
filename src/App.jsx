@@ -3,7 +3,7 @@ import { LiFiWidget } from '@lifi/widget';
 
 const widgetConfig = {
   variant: 'wide',
-  fee: 0.01
+  fee: 0.01,
   containerStyle: {
     border: '1px solid #eee',
     borderRadius: '16px',
