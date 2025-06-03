@@ -85,12 +85,31 @@ function App() {
         backgroundColor: '#ffffff',
         width: '100vw',
         height: '100vh',
+        position: 'relative',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         overflow: 'hidden',
       }}
     >
+      {/* Logo en haut à gauche */}
+      <a
+        href="https://mondialswap.com"
+        style={{
+          position: 'absolute',
+          top: '20px',
+          left: '20px',
+          zIndex: 10,
+        }}
+      >
+        <img
+          src="logo-mondialswap.png"
+          alt="MondialSwap Logo"
+          style={{ height: '40px', cursor: 'pointer' }}
+        />
+      </a>
+
+      {/* Widget */}
       <div style={{ width: '100%', maxWidth: '500px', height: '600px' }}>
         <LiFiWidget config={widgetConfig} />
       </div>
