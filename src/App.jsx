@@ -3,16 +3,11 @@ import { LiFiWidget } from '@lifi/widget';
 
 const widgetConfig = {
   variant: 'wide',
+  integrator: 'realtswap', // Déplacé ici au lieu d'être dans les props du composant
+  fee: 0.001, // 0.1% - Format correct selon la documentation
   containerStyle: {
     border: '1px solid #eee',
     borderRadius: '16px',
-  },
-  options: {
-    fee: {
-      recipient: '0xc64C27E0b7407b0ae6c87329aAf5bb0cAd76BF4f',
-      amount: 0.001, // 0.1%
-      feeType: 'percentage',
-    },
   },
   appearance: 'light',
   walletConfig: {
@@ -107,10 +102,10 @@ function App() {
           style={{ height: '60px', cursor: 'pointer' }}
         />
       </a>
-
+      
       {/* Widget */}
       <div style={{ width: '100%', maxWidth: '500px', height: '600px' }}>
-        <LiFiWidget integrator="realtswap" config={widgetConfig} />
+        <LiFiWidget config={widgetConfig} />
       </div>
     </div>
   );
