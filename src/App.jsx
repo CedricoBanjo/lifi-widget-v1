@@ -10,12 +10,6 @@ const widgetConfig = {
     borderRadius: '16px',
   },
   appearance: 'light',
-  walletConfig: {
-    onConnect: () => {
-      console.log('Wallet connected!');
-    },
-    usePartialWalletManagement: true,
-  },
   theme: {
     colorSchemes: {
       light: {
